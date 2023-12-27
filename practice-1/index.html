@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Practice Test 1</title>
+  </head>
+  <body>
+    <button class="show" id="show">Become a project partner</button>
+    <div class="preloader hidden" id="preloader">
+      <div class="modal">
+        <div class="wrapper">
+          <h1 class="primary">Стать партнёром проекта</h1>
+          <form
+            action="/"
+            class="form"
+            enctype="multipart/form-data"
+            method="POST"
+          >
+            <section class="main">
+              <section class="block">
+                <span class="error name hidden">Обязательное поле</span>
+                <section class="input-field">
+                  <div class="input-label">
+                    <label for="name"><span>*</span>Название организации</label>
+                    <input type="text" name="name" id="name" value="АВЦ" />
+                  </div>
+                </section>
+                <span class="error phone hidden">Обязательное поле</span>
+                <section class="input-field">
+                  <div class="input-label">
+                    <label for="phone"><span>*</span>Телефон</label>
+                    <input
+                      type="phone"
+                      name="phone"
+                      id="phone"
+                      value="+7 933 848-34-33"
+                    />
+                  </div>
+                </section>
+                <span class="error email hidden">Обязательное поле</span>
+                <section class="input-field">
+                  <div class="input-label">
+                    <label for="email"><span>*</span>E-mail</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      value="avc@gmail.com"
+                    />
+                  </div>
+                </section>
+              </section>
+              <section class="logo">
+                <span class="error logo hidden">Обязательное поле</span>
+                <div class="input-label logo">
+                  <label class="logo-label" for="logo"
+                    ><span>*</span>Логотип (jpeg, png)</label
+                  >
+                  <div class="logo-block">
+                    <img
+                      class="logo-vector"
+                      src="./icons/vector1.svg"
+                      alt="vector"
+                    />
+                    <img
+                      class="logo-cross"
+                      src="./icons/cross.svg"
+                      alt="cross"
+                    />
+                    <button class="logo-choice">Выберите файл</button>
+                    <input
+                      type="file"
+                      id="logo-file"
+                      name="logo"
+                      value="Выберите файл"
+                      class="logo-file"
+                      accept="image/*"
+                    />
+                    <img src="./icons/logo.png" class="logo-img" alt="logo" />
+                  </div>
+                </div>
+              </section>
+            </section>
+            <span class="error direction hidden">Обязательное поле</span>
+            <section class="input-field select">
+              <div class="input-label">
+                <label for="select"><span>*</span>Направление</label>
+                <input
+                  type="text"
+                  id="select"
+                  name="direction"
+                  readonly
+                  value="Экология"
+                />
+                <div class="options hidden">
+                  <button>Экология</button>
+                  <button>Математика</button>
+                  <button>Биология</button>
+                  <button>Физика</button>
+                  <button>Химия</button>
+                </div>
+              </div>
+              <img
+                class="icon toggler"
+                src="./icons/toggler.svg"
+                alt="toggler"
+              />
+            </section>
+            <section class="input-field">
+              <input type="text" value="avc.ru" />
+              <img class="icon" src="./icons/global.svg" alt="global" />
+            </section>
+            <section class="input-field">
+              <input type="text" value="vk.com/shans" />
+              <img class="icon" src="./icons/vk.svg" alt="vk" />
+            </section>
+            <section class="input-field">
+              <input type="text" value="ok.com/shans" />
+              <img class="icon" src="./icons/ok.svg" alt="ok" />
+            </section>
+            <section class="input-field">
+              <input type="text" value="facebook.com/shans" />
+              <img class="icon" src="./icons/facebook.svg" alt="facebook" />
+            </section>
+            <section class="input-field">
+              <input type="text" value="instagram.com/shans" />
+              <img class="icon" src="./icons/instagram.svg" alt="instagram" />
+            </section>
+            <section class="input-field">
+              <input type="text" value="youtube.com/shans" />
+              <img class="icon" src="./icons/youtube.svg" alt="youtube" />
+            </section>
+            <section class="input-field">
+              <div class="input-label">
+                <label for="head">Руководитель</label>
+                <input type="text" id="head" value="avc.ru" />
+              </div>
+            </section>
+            <section class="buttons">
+              <button type="submit" class="submit">
+                Стать партнером проекта
+              </button>
+              <button type="reset" class="reset"><span>Отменить</span></button>
+            </section>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

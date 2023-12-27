@@ -1,0 +1,289 @@
+@import "./fonts/Montserrat-VariableFont_wght.ttf";
+@import "./fonts/Lato-Light.ttf";
+@import "./fonts/PTSans-Regular.ttf";
+
+* {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  min-height: 1800px;
+}
+
+div.preloader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.42);
+  max-height: 100%;
+}
+
+div.preloader.hidden {
+  display: none;
+}
+
+div.modal {
+  position: absolute;
+  margin: auto;
+  top: 10%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 754px;
+  min-width: 320px;
+  min-height: 1248px;
+  max-height: 70%;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+div.wrapper {
+  margin: 8% 15%;
+}
+
+h1.primary {
+  font-family: "Montserrat", sans-serif;
+  color: #0c1014;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 34px;
+}
+
+.buttons {
+  width: 100%;
+}
+
+button {
+  border: 0;
+  width: 100%;
+  height: 48px;
+  text-align: center;
+}
+
+button.show {
+  font-family: "Lato", sans-serif;
+  background-color: #e5266e;
+  color: #fff;
+  line-height: 18px;
+  border-radius: 4px;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+}
+
+button.submit {
+  font-family: "Lato", sans-serif;
+  background-color: #e5266e;
+  color: #fff;
+  line-height: 18px;
+  border-radius: 4px;
+}
+
+button.submit:hover {
+  cursor: pointer;
+}
+
+button.reset {
+  font-family: "PT Sans", sans-serif;
+  line-height: 24px;
+  color: #0848c0;
+  background: none;
+  font-size: 16px;
+}
+
+button.reset span:hover {
+  cursor: pointer;
+}
+
+.form {
+  margin: 35px 0 50px;
+  width: 100%;
+}
+
+section.main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+section.block {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  margin-right: 5%;
+}
+
+section.logo {
+  flex-grow: 1;
+}
+
+section.logo .input-label .logo-label {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.input-label.logo {
+  align-items: center;
+}
+
+.logo-block {
+  position: relative;
+  max-width: 175px;
+  max-height: 175px;
+  margin-bottom: 32px;
+}
+
+.logo-block:hover {
+  cursor: pointer;
+}
+
+.logo-cross {
+  position: absolute;
+  z-index: 2;
+  left: 90%;
+  top: 7%;
+}
+
+.logo-vector {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 30%;
+}
+
+.logo-choice {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  left: 10%;
+  top: 50%;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  line-height: 28px;
+  text-decoration: underline;
+}
+
+.logo-file {
+  display: none;
+}
+
+.logo-btn .cross {
+  position: absolute;
+  right: 20%;
+}
+
+.logo-img {
+  border-radius: 50%;
+  filter: brightness(40%);
+}
+
+section.input-field {
+  position: relative;
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4%;
+  align-items: center;
+  border: 1px solid #d6dade;
+  border-radius: 2px;
+  margin-bottom: 32px;
+}
+
+div.input-label {
+  display: flex;
+  flex-direction: column;
+}
+
+div.input-label label {
+  font-family: "PT Sans", sans-serif;
+  color: #6a6e72;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+div.input-label label span {
+  color: #d90000;
+  position: relative;
+  top: 10px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-right: 3px;
+}
+
+input {
+  border: none;
+  outline: none;
+  line-height: 24px;
+  width: 100%;
+}
+
+img.icon:hover {
+  cursor: pointer;
+}
+
+img.icon.toggler.reverse {
+  transform: rotate(180deg);
+}
+
+div.options {
+  position: absolute;
+  z-index: 2;
+  top: 60px;
+  width: 100%;
+  left: 0;
+}
+
+div.options button {
+  position: relative;
+  height: 56px;
+  display: flex;
+  padding: 0 2%;
+  align-items: center;
+  border: 1px solid #d6dade;
+  border-radius: 2px;
+}
+
+div.options.hidden {
+  display: none;
+}
+
+.error {
+  font-family: "PT Sans", sans-serif;
+  font-size: 12px;
+  color: #d90000;
+}
+
+.error.hidden {
+  display: none;
+}
+
+.required-field {
+  border: 2px solid #d90000;
+}
+
+@media (max-width: 576px) {
+  div.modal {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    max-width: 754px;
+    min-width: 320px;
+    min-height: 80%;
+    border-radius: 12px;
+    background-color: #fff;
+  }
+}
